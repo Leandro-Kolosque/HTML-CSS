@@ -1,1 +1,56 @@
 @charset "UTF-8";
+
+:root {
+    --cor01: #b80000;
+    --cor02: #b11b25;
+    --cor03: #19323c;
+    --cor04: #fdf7fa;
+    --cor05: #fcfff7;
+    --cor06: #cab816;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: var(--cor01);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor04);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+section#login>div#imagem {
+    background: var(--cor01) url(../imagens/pexels-pixabay-260352.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: right top;
+    display: block;
+}
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+
+}
