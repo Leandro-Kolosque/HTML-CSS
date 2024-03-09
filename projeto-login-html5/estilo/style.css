@@ -3,10 +3,10 @@
 :root {
     --cor01: #b80000;
     --cor02: #b11b25;
-    --cor03: #19323c;
+    --cor03: #112128;
     --cor04: #fdf7fa;
     --cor05: #fcfff7;
-    --cor06: #cab816;
+    --cor06: #f0da16;
 }
 
 * {
@@ -98,7 +98,8 @@ div.campo>input {
     padding: 4px;
     transform: translateY(-12px);
 }
-div.campo > input:focus-within{
+
+div.campo>input:focus-within {
     background-color: var(--cor04);
     border: none;
 }
