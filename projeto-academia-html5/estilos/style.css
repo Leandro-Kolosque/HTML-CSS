@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* <h2 class= "title decor"> 
+    ::Before
+    "Sobre "
+    <Span> nós <span>
+    </h2>
+*/
+
+/*
+.title-decor {
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+.title-decor span {
+    color: blue;
+}
+
+.title-decor:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 4px;
+    background-color: red;
+}
+*/
