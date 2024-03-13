@@ -1,5 +1,57 @@
 @charset "UTF-8";
 
+:root {
+    --cor01: #b80000;
+    --cor02: #b11b25;
+    --cor03: #112128;
+    --cor04: #fdf7fa;
+    --cor05: #fcfff7;
+    --cor06: #f0da16;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(21, 21, 21);
+}
+
+.img-logo {
+    height: 90px;
+    margin-left: 50px;
+}
+
+.header-menu {
+    margin-right: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.header-menu-item {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--cor04);
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-menu-item:hover {
+    font-weight: bolder;
+}
+
+.text-decoration-contato {
+    background-color: var(--cor01);
+    border: 10px solid var(--cor01);
+    border-radius: 20px 0px 20px 20px;
+}
+
 /* <h2 class= "title decor"> 
     ::Before
     "Sobre "
