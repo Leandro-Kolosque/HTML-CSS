@@ -119,6 +119,37 @@
     border: 4px solid var(--cor01);
 }
 
+/*Formatação da section UNIDADES*/
+.div-unidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-unidades {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #b11b25;
+}
+
+.section-unidades-text-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Madimi One", sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section-unidades-list-items {
+    list-style: none;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 4px solid var(--cor04);
+    text-align: center;
+}
+
+
 
 /* <h2 class= "title decor"> 
     ::Before
