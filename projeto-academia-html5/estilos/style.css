@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
     --cor01: #b80000;
@@ -120,16 +121,16 @@
 }
 
 /*Formatação da section UNIDADES*/
-.div-unidades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .section-unidades {
     padding: 10px;
     margin-top: 10px;
-    background-color: #b11b25;
+    background: linear-gradient(to bottom, var(--cor01), #9f2f2f, #6c3c3c, #141414);
+}
+
+.div-unidades-text-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-unidades-text-title {
@@ -140,16 +141,57 @@
     margin-bottom: 15px;
 }
 
-.section-unidades-list-items {
-    list-style: none;
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-    border: 4px solid var(--cor04);
-    text-align: center;
+.section-unidades-list-title {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
+.section-unidades-list-items {
+    list-style: none;
+    color: var(--cor04);
+    border: 4px solid var(--cor04);
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Roboto Mono", monospace;
+    ;
+}
 
+.section-unidades-list-items:hover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0px;
+}
+
+.section-unidades-list-items#matriz:hover {
+    background-image: url(../imagens/a-matriz-pqn.jpg);
+}
+
+.section-unidades-list-items#filial01:hover {
+    background-image: url(../imagens/filial01.jpg);
+}
+
+.section-unidades-list-items#filial02:hover {
+    background-image: url(../imagens/filial02.jpg);
+    background-position: center;
+}
+
+.section-unidades-list-items#filial03:hover {
+    background-image: url(../imagens/filial03.jpg);
+}
+
+.section-unidades-list-items#filial04:hover {
+    background-image: url(../imagens/filial04.jpg);
+}
 
 /* <h2 class= "title decor"> 
     ::Before
