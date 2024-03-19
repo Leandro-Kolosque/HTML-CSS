@@ -59,7 +59,7 @@ class FormSubmit {
 const formSubmit = new FormSubmit({
   form: "[data-form]",
   button: "[data-button]",
-  success: "<h3 class='success'>Mensagem enviada!</h3>",
-  error: "<h3 class='error'>Não foi possível enviar sua mensagem.</h3>",
+  success: "<h1 class='success'>Mensagem enviada!</h1>",
+  error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
