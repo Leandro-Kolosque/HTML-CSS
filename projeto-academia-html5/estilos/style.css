@@ -189,7 +189,6 @@
 }
 
 /*Direita*/
-
 .div-unidades-items .item:hover+* {
     filter: inherit;
     transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
@@ -197,7 +196,6 @@
 }
 
 /*Esquerda*/
-
 .div-unidades-items .item:has(+ :hover) {
     filter: inherit;
     transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
@@ -211,6 +209,7 @@
     transform: translateZ(calc(var(--index) * 10));
     margin: 0 .45vw;
 }
+
 
 /*Formatação da Section APP */
 .section-app {
@@ -329,6 +328,13 @@ button {
     transition: 0.3s;
 }
 
+button:hover,
+button:focus {
+    text-decoration: underline;
+    font-size: larger;
+    transition: 0.3s;
+}
+
 button:disabled {
     cursor: not-allowed;
     background: var(--cor03);
@@ -351,4 +357,14 @@ button:disabled {
     font-family: "Roboto Mono", monospace;
     font-size: 20px;
     color: var(--cor04);
+}
+
+.a-footer {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor04);
+}
+
+.a-footer:hover {
+    text-decoration: underline;
 }
