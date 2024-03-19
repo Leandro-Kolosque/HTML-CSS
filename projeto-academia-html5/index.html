@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="shortcut icon" href="imagens/icons8-haltere-16.png" type="image/x-icon">
+    <script defer src="javascript/app.js"></script>
     <title>Shape Today</title>
 </head>
 
@@ -14,16 +15,16 @@
     <header class="header">
         <img class="img-logo" src="./imagens/logo_redondo_vermelho.png" alt="Logo da Academia"></img>
         <nav class="header-menu">
-            <a class="header-menu-item" href="#">Home</a>
-            <a class="header-menu-item" href="#">Sobre</a>
-            <a class="header-menu-item" href="#">Unidades</a>
-            <a class="header-menu-item" href="#">Aplicativo</a>
-            <a class="header-menu-item" href="#"><span class="text-decoration-contato">Contato</span></a>
+            <a class="header-menu-item" href="#titulo01">Home</a>
+            <a class="header-menu-item" href="#titulo02">Sobre</a>
+            <a class="header-menu-item" href="#titulo03">Unidades</a>
+            <a class="header-menu-item" href="#titulo04">Aplicativo</a>
+            <a class="header-menu-item" href="#titulo05"><span class="text-decoration-contato">Contato</span></a>
         </nav>
     </header>
 
     <main class="principal">
-        <section class="section-sobre">
+        <section class="section-sobre" id="titulo01">
             <div class="div-sobre-img">
                 <img class="section-sobre-img" src="imagens/fundo_academiaEscuro.jpg" alt="Foto de uma Academia "></img>
                 <h2 class="section-sobre-img-title">
@@ -32,7 +33,7 @@
             </div>
             <div class="div-sobre-text-title">
                 <h2 class="section-sobre-text-title">
-                    Sobre a <span class="shape-today"> Shape Today</span>
+                    Sobre a <span class="shape-today" id="titulo02"> Shape Today</span>
                 </h2>
             </div>
             <div class="div-sobre-text-p">
@@ -51,7 +52,7 @@
 
         <section class="section-unidades">
             <div class="div-unidades-text-title">
-                <h2 class="section-unidades-text-title">
+                <h2 class="section-unidades-text-title" id="titulo03">
                     Unidades
                 </h2>
             </div>
@@ -75,7 +76,7 @@
             </div>
         </section>
 
-        <section class="section-app">
+        <section class="section-app" id="titulo04">
             <div class="div-app">
                 <img class="section-app-img" src="imagens/foto-app.png" alt="Foto de um celular">
                 <div class="div-app-list">
@@ -90,15 +91,21 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="titulo05">
         <h2 class="footer-title">
             Contato
         </h2>
-        <form action="">
-            [nome]
-            [email]
-            [motivo]
-        </form>
+        <div class="div-form">
+            <form class="form" action="https://formsubmit.co/ajax/leandro.wingerth@gmail.com" method="post" data-form>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required>
+                <label for="imensagem">Mensagem: </label>
+                <textarea name="mesagem" id="imensagem" cols="30" rows="10"></textarea>
+                <button type="submit" data-button>Enviar</button>
+            </form>
+        </div>
         <p class="footer-text-p">
             Site criado por <a href="https://github.com/Leandro-Kolosque">Leandro Kolosque</a>
         </p>

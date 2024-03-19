@@ -149,7 +149,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 55vh;
 }
 
 .div-unidades-items {
@@ -262,4 +262,93 @@
     text-transform: uppercase;
     font-family: "Madimi One", sans-serif;
     font-size: 30px;
+}
+
+.div-form {
+    min-height: 10vh;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    color: var(--cor04);
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+}
+
+label,
+input,
+textarea,
+button {
+    display: block;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    font: inherit;
+    margin: 10px;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+    color: var(--cor04);
+    background-color: rgb(40, 40, 40);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: var(--cor01);
+    box-shadow: 0 0 0 1px var(--cor01);
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 99px;
+    color: var(--cor04);
+    background: var(--cor01);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: var(--cor03);
+}
+
+.succes,
+.error {
+    text-align: center;
+}
+
+.succes {
+    color: var(--cor04);
+}
+
+.error {
+    color: var(--cor01);
+}
+
+.footer-text-p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    color: var(--cor04);
 }
