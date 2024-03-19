@@ -10,6 +10,9 @@
     --cor04: #fdf7fa;
     --cor05: #fcfff7;
     --cor06: #f0da16;
+
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
 }
 
 * {
@@ -17,7 +20,7 @@
     padding: 0px;
 }
 
-/*Formatação do Cabeçalho */
+/*Formatação do CABEÇALHO */
 .header {
     display: flex;
     flex-direction: row;
@@ -61,7 +64,7 @@
     margin: 25px;
 }
 
-/*Formatação da Section SOBRE*/
+/*Formatação da Section SOBRE */
 .div-sobre-img {
     position: relative;
     display: inline-block;
@@ -107,7 +110,7 @@
 
 .div-sobre-text-p {
     padding: 25px;
-    background-color: black;
+    background-color: #141414;
 }
 
 .section-sobre-text-p {
@@ -120,11 +123,11 @@
     border: 4px solid var(--cor01);
 }
 
-/*Formatação da section UNIDADES*/
+/*Formatação da section UNIDADES */
 .section-unidades {
+    background-color: #141414;
     padding: 10px;
-    margin-top: 10px;
-    background: linear-gradient(to bottom, var(--cor01), #9f2f2f, #6c3c3c, #141414);
+    margin-top: 20px;
 }
 
 .div-unidades-text-title {
@@ -138,150 +141,125 @@
     text-transform: uppercase;
     font-family: "Madimi One", sans-serif;
     font-size: 30px;
-    margin-bottom: 15px;
+    color: var(--cor01);
 }
 
-.section-unidades-list-title {
+.div-unidades-text-items {
+    background-color: #141414;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 0;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-.section-unidades-list-items {
-    list-style: none;
-    color: var(--cor04);
-    border: 4px solid var(--cor04);
-    height: 150px;
-    width: 150px;
-    text-align: center;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.div-unidades-items {
     display: flex;
-    font-family: "Roboto Mono", monospace;
+    gap: 20px;
+    perspective: calc(var(--index) * 35);
 }
 
-.section-unidades-list-items:hover {
+.item {
+    width: calc(var(--index) * 3);
+    height: calc(var(--index) * 12);
+    background-color: #222;
     background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 0px;
-}
-
-.section-unidades-list-items#matriz:hover {
-    background-image: url(../imagens/a-matriz-pqn.jpg);
-}
-
-.section-unidades-list-items#filial01:hover {
-    background-image: url(../imagens/filial01.jpg);
-}
-
-.section-unidades-list-items#filial02:hover {
-    background-image: url(../imagens/filial02.jpg);
     background-position: center;
+    cursor: pointer;
+    filter: grayscale(1) brightness(.5);
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter, rotateY, width;
 }
 
-.section-unidades-list-items#filial03:hover {
-    background-image: url(../imagens/filial03.jpg);
+.item::before,
+.item::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: calc(var(--index) * -1);
 }
 
-.section-unidades-list-items#filial04:hover {
-    background-image: url(../imagens/filial04.jpg);
+.item::after {
+    left: calc(var(--index) * -1);
+}
+
+.div-unidades-items .item:hover {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 10));
+}
+
+/*Direita*/
+
+.div-unidades-items .item:hover+* {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+    z-index: -1;
+}
+
+/*Esquerda*/
+
+.div-unidades-items .item:has(+ :hover) {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+
+.div-unidades-items .item:active,
+.div-unidades-items .item:focus {
+    width: 28vw;
+    filter: inherit;
+    z-index: 100;
+    transform: translateZ(calc(var(--index) * 10));
+    margin: 0 .45vw;
 }
 
 /*Formatação da Section APP */
 .section-app {
-    padding: 10px;
+    padding: 5px;
     margin-top: 10px;
     border: 4px solid var(--cor01);
 }
 
-.div-app-img-text {
+.div-app {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.div-app-list {
+    border: 3px solid var(--cor01);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
 }
 
 .section-app-text-title {
-    text-align: left;
+    text-align: center;
+    text-transform: uppercase;
     font-family: "Madimi One", sans-serif;
     font-size: 30px;
-    margin-left: 40px;
-    text-transform: uppercase;
-}
-
-.section-app-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 30vw;
-}
-
-.div-app-text {
-    border: 2px solid var(--cor01);
-}
-
-.section-app-description-text-title {
-    text-align: left;
-    font-family: "Madimi One", sans-serif;
-    font-size: 25px;
-    margin-left: 40px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.section-app-list-tile {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 0;
-    gap: 15px;
-    margin-bottom: 15px;
-
 }
 
 .section-app-list-items {
-    list-style: none;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    padding: 10px;
 }
 
-
-
-/* <h2 class= "title decor"> 
-    ::Before
-    "Sobre "
-    <Span> nós <span>
-    </h2>
-*/
-
-/*
-.title-decor {
-    position: relative;
+/*Formatação do FOOTER */
+.footer {
+    background-color: rgb(21, 21, 21);
+    padding: 10px;
     text-align: center;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    color: #555555;
 }
 
-.title-decor span {
-    color: blue;
+.footer-title {
+    color: var(--cor01);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Madimi One", sans-serif;
+    font-size: 30px;
 }
-
-.title-decor:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 45px;
-    height: 4px;
-    background-color: red;
-}
-*/
