@@ -63,3 +63,19 @@ const formSubmit = new FormSubmit({
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
+
+function clickMenu() {
+  if (itemsMenu.style.display == 'block') {
+    itemsMenu.style.display = 'none'
+  } else {
+    itemsMenu.style.display = 'block'
+  }
+}
+
+function changedSize() {
+  if (window.innerWidth >= 768) {
+    itemsMenu.style.display = 'flex'
+  } else {
+    itemsMenu.style.display = 'none'
+  }
+}

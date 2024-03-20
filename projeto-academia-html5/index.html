@@ -11,16 +11,17 @@
     <title>Shape Today</title>
 </head>
 
-<body>
+<body onresize="changedSize()">
     <header class="header">
         <img class="img-logo" src="./imagens/logo_redondo_vermelho.png" alt="Logo da Academia"></img>
-        <nav class="header-menu">
+        <nav class="header-menu" id="itemsMenu">
             <a class="header-menu-item" href="#titulo01">Home</a>
             <a class="header-menu-item" href="#titulo02">Sobre</a>
             <a class="header-menu-item" href="#titulo03">Unidades</a>
             <a class="header-menu-item" href="#titulo04">Aplicativo</a>
             <a class="header-menu-item" href="#titulo05"><span class="text-decoration-contato">Contato</span></a>
         </nav>
+        <img class="img-menu" src="imagens/icone-menu-white.png" alt="Ícone de Menu" onclick="clickMenu()">
     </header>
 
     <main class="principal">
@@ -106,9 +107,7 @@
                 <button type="submit" data-button>Enviar</button>
             </form>
         </div>
-        <p class="footer-text-p">
-            Site criado por <a class="a-footer" href="https://github.com/Leandro-Kolosque">Leandro Kolosque</a>
-        </p>
     </footer>
 </body>
+
 </html>

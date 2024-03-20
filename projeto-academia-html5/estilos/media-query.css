@@ -10,9 +10,164 @@ Telas Grandes: acima de 1200px
 -----------------------------
 */
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .header {
+        justify-content: space-between;
+    }
 
+    .img-menu {
+        display: none;
+    }
+
+    .header-menu {
+        display: flex;
+        margin-right: 50px;
+        gap: 40px;
+    }
+
+    .section-sobre-img-title {
+        font-size: 40px;
+    }
+
+    .div-unidades-text-items {
+        height: 35vh;
+    }
+
+    .div-unidades-items {
+        gap: 30px;
+    }
+
+    .section-app-img {
+        width: 30vw;
+    }
+
+    .section-app-text-title {
+        font-size: 20px;
+    }
+
+    .section-app-list-items {
+        font-size: 15px;
+        padding: 5px;
+        list-style: disc inside;
+    }
+
+    .footer {
+        padding: 5px;
+    }
+
+    .footer-title {
+        font-size: 25px;
+    }
+
+    .header-menu-item {
+        font-size: 18px;
+    }
+
+    .text-decoration-contato {
+        background-color: var(--cor01);
+        border: 10px solid var(--cor01);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .img-logo {
+        height: 90px;
+        margin-left: 50px;
+    }
+
+    .img-menu {
+        height: 40px;
+    }
 }
 
 @media screen and (min-width: 992px) {
-    
+    .header {
+        justify-content: space-between;
+    }
+
+    .img-menu {
+        display: none;
+    }
+
+    .header-menu {
+        display: flex;
+        margin-right: 50px;
+        gap: 40px;
+    }
+
+    .section-sobre-img-title {
+        font-size: 70px;
+    }
+
+    .header-menu-item {
+        font-size: 18px;
+    }
+
+    .text-decoration-contato {
+        background-color: var(--cor01);
+        border: 10px solid var(--cor01);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .img-logo {
+        height: 90px;
+        margin-left: 50px;
+    }
+
+    .img-menu {
+        height: 40px;
+    }
+
+    .section-app {
+        padding: 5px;
+        margin-top: 10px;
+        border: 4px solid var(--cor01);
+    }
+
+    .section-app-img {
+        width: 32vw;
+    }
+
+    .div-app {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .div-app-list {
+        border: 3px solid var(--cor01);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .section-app-text-title {
+        font-size: 30px;
+    }
+
+    .section-app-list-items {
+        font-family: "Roboto Mono", monospace;
+        font-size: 20px;
+        padding: 10px;
+        list-style: disc inside;
+    }
+
+    .section-app-img {
+        width: 30vw;
+    }
+
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-title {
+        font-size: 30px;
+    }
+
+    .div-form {
+        font-size: 20px;
+    }
 }
