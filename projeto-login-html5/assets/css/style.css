@@ -45,7 +45,7 @@ section#login {
 }
 
 section#login>div#imagem {
-    background: var(--cor01) url(../imagens/pexels-pixabay-260352.jpg) no-repeat;
+    background: var(--cor01) url(../imgs/pexels-pixabay-260352.jpg) no-repeat;
     height: 200px;
     background-size: cover;
     background-position: right top;
