@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(../imgs/andre-benz-cXU6tNxhub0-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 420px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .84);
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.container .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    color: white;
+}
+
+.container .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+}
+
+.remember-forgot label {
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: white;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.container .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-decoration-break: 0px 0px 10px rgba(0px 0px 0px 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container .register {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0px 20px;
+}
+
+.register p a {
+    color: white;
+    text-decoration: none;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
