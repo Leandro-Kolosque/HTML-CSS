@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root{
@@ -255,7 +256,7 @@ main .analyse h3{
     font-size: 1rem;
 }
 
-main .analyse .progresss{
+main .analyse .progress{
     position: relative;
     width: 92px;
     height: 92px;
@@ -292,7 +293,7 @@ main .analyse .searches svg circle{
     stroke-dasharray: 200;
 }
 
-main .analyse .progresss .percentage{
+main .analyse .progress .percentage{
     position: absolute;
     top: -3px;
     left: -1px;
